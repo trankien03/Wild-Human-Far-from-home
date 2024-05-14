@@ -7,8 +7,8 @@ using UnityEngine.InputSystem;
 [RequireComponent (typeof (Rigidbody2D))]
 public class PlayerController : MonoBehaviour
 {
-    public float wakSpeed = 6f;
-    public float runSpeed = 10f;
+    public float walkSpeed = 100.0f;
+    public float runSpeed = 200.0f;
 
     public float currentMoveSpeed {
         get
@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
             if (IsMoving)
             {
                 if (IsRunning) return runSpeed;
-                else return wakSpeed;
+                else return walkSpeed;
             }
             else
             {
