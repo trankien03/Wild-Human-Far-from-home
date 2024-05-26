@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 8529158608115655695}
   - component: {fileID: 3796180741912681366}
   - component: {fileID: 5212703305646112311}
+  - component: {fileID: 2715176965987689203}
+  - component: {fileID: 17401456124341829}
   m_Layer: 0
   m_Name: Spectre
   m_TagString: Untagged
@@ -127,8 +129,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16aa17700c5481f4faf7e31f06d3b46b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wakSpeed: 6
+  walkSpeed: 100
   runSpeed: 10
+  jumpImpluse: 250
   _isMoving: 0
   _IsRunning: 0
   _isFacingRight: 1
@@ -237,6 +240,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: b39ba748-71ba-4c79-80a0-3ce625554959
     m_ActionName: Player/Run[/Keyboard/leftShift]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2715176965987689203}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnJump
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: cce30cc5-fab6-46ff-829b-cbb05697ab01
+    m_ActionName: Player/Jump_Key[/Keyboard/space]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -263,3 +282,49 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2715176965987689203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5946333728057760420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16aa17700c5481f4faf7e31f06d3b46b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkSpeed: 100
+  runSpeed: 200
+  jumpImpluse: 250
+  _isMoving: 0
+  _IsRunning: 0
+  _isFacingRight: 1
+--- !u!114 &17401456124341829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5946333728057760420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 909b5ae6b58fa734ba197be447ace777, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  castFilter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
+  groundDistance: 0.05
+  _isGrounded: 0
