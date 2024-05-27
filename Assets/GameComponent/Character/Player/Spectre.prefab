@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 8949344832934126318}
   - component: {fileID: 4974224879929808530}
   - component: {fileID: 1643844506650007736}
-  - component: {fileID: 8529158608115655695}
   - component: {fileID: 3796180741912681366}
   - component: {fileID: 5212703305646112311}
   - component: {fileID: 2715176965987689203}
   - component: {fileID: 17401456124341829}
+  - component: {fileID: 1112539118629250375}
   m_Layer: 0
   m_Name: Spectre
   m_TagString: Untagged
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 525ec9ca268e3ce48bd83617fe1122ce, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -116,25 +116,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &8529158608115655695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5946333728057760420}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16aa17700c5481f4faf7e31f06d3b46b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkSpeed: 100
-  runSpeed: 10
-  jumpImpluse: 250
-  _isMoving: 0
-  _IsRunning: 0
-  _isFacingRight: 1
+  m_Constraints: 4
 --- !u!114 &3796180741912681366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,7 +144,7 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8529158608115655695}
+      - m_Target: {fileID: 2715176965987689203}
         m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
         m_MethodName: OnMove
         m_Mode: 0
@@ -226,7 +208,7 @@ MonoBehaviour:
     m_ActionName: UI/TrackedDeviceOrientation
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8529158608115655695}
+      - m_Target: {fileID: 2715176965987689203}
         m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
         m_MethodName: OnRun
         m_Mode: 0
@@ -255,7 +237,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     m_ActionId: cce30cc5-fab6-46ff-829b-cbb05697ab01
-    m_ActionName: Player/Jump_Key[/Keyboard/space]
+    m_ActionName: Player/jump[/Keyboard/space]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -296,7 +278,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 100
   runSpeed: 200
-  jumpImpluse: 250
+  jumpImpluse: 8
+  airWalkSpeed: 100
   _isMoving: 0
   _IsRunning: 0
   _isFacingRight: 1
@@ -327,4 +310,43 @@ MonoBehaviour:
     minNormalAngle: 0
     maxNormalAngle: 0
   groundDistance: 0.05
+  wallDistance: 0.2
+  cellingDistance: 0.05
   _isGrounded: 0
+  _isOnWall: 0
+  _isOnCelling: 0
+--- !u!70 &1112539118629250375
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5946333728057760420}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.064546466, y: -0.27049315}
+  m_Size: {x: 0.34714675, y: 1.1578195}
+  m_Direction: 0

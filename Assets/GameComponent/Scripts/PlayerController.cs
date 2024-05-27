@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     public float jumpImpluse = 250.0f;
     public float airWalkSpeed = 150.0f;
 
+    
+
     public float currentMoveSpeed {
         get
         {
@@ -33,11 +35,14 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        private set 
+        set 
         { 
 
         }
     }
+
+
+
     Vector2 moveInput;
     TouchingDrirection touchingDrirection;
     Rigidbody2D rb;
@@ -83,7 +88,7 @@ public class PlayerController : MonoBehaviour
         } 
     }
 
-
+   
 
     Animator animator;
 
