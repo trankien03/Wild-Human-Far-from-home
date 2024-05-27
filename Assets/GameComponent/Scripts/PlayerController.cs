@@ -12,32 +12,45 @@ public class PlayerController : MonoBehaviour
     public float jumpImpluse = 250.0f;
     public float airWalkSpeed = 150.0f;
 
+
     
 
     public float currentMoveSpeed {
         get
         {
-            if (IsMoving && !touchingDrirection.IsOnWall)
+            if (CanMove)
             {
-                if (touchingDrirection.IsGrounded)
+                if (IsMoving && !touchingDrirection.IsOnWall)
                 {
-                    if (IsRunning) return runSpeed;
-                    else return walkSpeed;
+                    if (touchingDrirection.IsGrounded)
+                    {
+                        if (IsRunning) return runSpeed;
+                        else return walkSpeed;
+                    }
+                    else
+                    {
+                        return airWalkSpeed;
+                    }
                 }
                 else
                 {
-                    return airWalkSpeed;
+                    return 0;
                 }
             }
-            else
-            {
-                return 0;
-            }
+            else return 0;
         }
 
         set 
         { 
 
+        }
+    }
+
+    public bool CanMove
+    {
+        get
+        {
+            return animator.GetBool(AnimationStrings.canMove);
         }
     }
 
@@ -128,12 +141,20 @@ public class PlayerController : MonoBehaviour
     public void OnJump(InputAction.CallbackContext context)
     {
         //Check if alive
-        if (context.started && touchingDrirection.IsGrounded)
+        if (context.started && touchingDrirection.IsGrounded && CanMove)
         {
             animator.SetTrigger(AnimationStrings.jump);
             rb.velocity = new Vector2(rb.velocity.x, jumpImpluse);
         }
     }
+
+    public void OnAttack(InputAction.CallbackContext context)
+    {
+        if (context.started && touchingDrirection.IsGrounded)
+        {
+            animator.SetTrigger(AnimationStrings.attack);
+        }
+    }   
 
     private void setFacingDirection(Vector2 moveInput)
     {
@@ -146,4 +167,5 @@ public class PlayerController : MonoBehaviour
             IsFacingRight = false;
         }
     }
+    
 }
