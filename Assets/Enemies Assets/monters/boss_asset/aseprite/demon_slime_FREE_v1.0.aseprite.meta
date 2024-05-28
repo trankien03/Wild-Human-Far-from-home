@@ -123,7 +123,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: demon_slime_FREE_v1.0_Frame_0
     originalName: 
-    pivot: {x: 0.475, y: -0.00952381}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -143,7 +143,7 @@ ScriptedImporter:
     uvTransform: {x: 140, y: 596}
   - name: demon_slime_FREE_v1.0_Frame_1
     originalName: 
-    pivot: {x: 0.47126436, y: -0.009615385}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -163,7 +163,7 @@ ScriptedImporter:
     uvTransform: {x: 807, y: 363}
   - name: demon_slime_FREE_v1.0_Frame_2
     originalName: 
-    pivot: {x: 0.47252747, y: -0.009345795}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -183,7 +183,7 @@ ScriptedImporter:
     uvTransform: {x: 549, y: 242}
   - name: demon_slime_FREE_v1.0_Frame_3
     originalName: 
-    pivot: {x: 0.48351654, y: -0.009433962}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -203,7 +203,7 @@ ScriptedImporter:
     uvTransform: {x: 869, y: 242}
   - name: demon_slime_FREE_v1.0_Frame_4
     originalName: 
-    pivot: {x: 0.47252747, y: -0.009345795}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -223,7 +223,7 @@ ScriptedImporter:
     uvTransform: {x: 648, y: 242}
   - name: demon_slime_FREE_v1.0_Frame_5
     originalName: 
-    pivot: {x: 0.47126436, y: -0.009803922}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -243,7 +243,7 @@ ScriptedImporter:
     uvTransform: {x: 902, y: 363}
   - name: demon_slime_FREE_v1.0_Frame_6
     originalName: 
-    pivot: {x: 0.54687506, y: -0.010000001}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -263,7 +263,7 @@ ScriptedImporter:
     uvTransform: {x: 770, y: 485}
   - name: demon_slime_FREE_v1.0_Frame_7
     originalName: 
-    pivot: {x: 0.51470596, y: -0.01010101}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -283,7 +283,7 @@ ScriptedImporter:
     uvTransform: {x: 467, y: 485}
   - name: demon_slime_FREE_v1.0_Frame_8
     originalName: 
-    pivot: {x: 0.52238816, y: -0.010000001}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -303,7 +303,7 @@ ScriptedImporter:
     uvTransform: {x: 619, y: 485}
   - name: demon_slime_FREE_v1.0_Frame_9
     originalName: 
-    pivot: {x: 0.50000006, y: -0.01010101}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -323,7 +323,7 @@ ScriptedImporter:
     uvTransform: {x: 311, y: 485}
   - name: demon_slime_FREE_v1.0_Frame_10
     originalName: 
-    pivot: {x: 0.47297302, y: -0.010000001}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -343,7 +343,7 @@ ScriptedImporter:
     uvTransform: {x: 664, y: 596}
   - name: demon_slime_FREE_v1.0_Frame_11
     originalName: 
-    pivot: {x: 0.448718, y: -0.010000001}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -363,7 +363,7 @@ ScriptedImporter:
     uvTransform: {x: 904, y: 4}
   - name: demon_slime_FREE_v1.0_Frame_12
     originalName: 
-    pivot: {x: 0.44705883, y: -0.01010101}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -383,7 +383,7 @@ ScriptedImporter:
     uvTransform: {x: 635, y: 4}
   - name: demon_slime_FREE_v1.0_Frame_13
     originalName: 
-    pivot: {x: 0.475, y: -0.01010101}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -403,7 +403,7 @@ ScriptedImporter:
     uvTransform: {x: 816, y: 4}
   - name: demon_slime_FREE_v1.0_Frame_14
     originalName: 
-    pivot: {x: 0.475, y: -0.010000001}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -423,7 +423,7 @@ ScriptedImporter:
     uvTransform: {x: 728, y: 4}
   - name: demon_slime_FREE_v1.0_Frame_15
     originalName: 
-    pivot: {x: 0.49315068, y: -0.01010101}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -443,7 +443,7 @@ ScriptedImporter:
     uvTransform: {x: 746, y: 596}
   - name: demon_slime_FREE_v1.0_Frame_16
     originalName: 
-    pivot: {x: 0.50000006, y: -0.010000001}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -483,7 +483,7 @@ ScriptedImporter:
     uvTransform: {x: 543, y: 485}
   - name: demon_slime_FREE_v1.0_Frame_18
     originalName: 
-    pivot: {x: 0.475, y: -0.00952381}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -503,7 +503,7 @@ ScriptedImporter:
     uvTransform: {x: 228, y: 596}
   - name: demon_slime_FREE_v1.0_Frame_19
     originalName: 
-    pivot: {x: 0.47368422, y: -0.009615385}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -523,7 +523,7 @@ ScriptedImporter:
     uvTransform: {x: 580, y: 596}
   - name: demon_slime_FREE_v1.0_Frame_20
     originalName: 
-    pivot: {x: 0.3978494, y: -0.009174312}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -543,7 +543,7 @@ ScriptedImporter:
     uvTransform: {x: 243, y: 242}
   - name: demon_slime_FREE_v1.0_Frame_21
     originalName: 
-    pivot: {x: 0.32558134, y: -0.009345795}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -563,7 +563,7 @@ ScriptedImporter:
     uvTransform: {x: 615, y: 363}
   - name: demon_slime_FREE_v1.0_Frame_22
     originalName: 
-    pivot: {x: 0.32222223, y: -0.009174312}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -583,7 +583,7 @@ ScriptedImporter:
     uvTransform: {x: 451, y: 242}
   - name: demon_slime_FREE_v1.0_Frame_23
     originalName: 
-    pivot: {x: 0.3146067, y: -0.00952381}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -603,7 +603,7 @@ ScriptedImporter:
     uvTransform: {x: 422, y: 363}
   - name: demon_slime_FREE_v1.0_Frame_24
     originalName: 
-    pivot: {x: 0.3139535, y: -0.009174312}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -623,7 +623,7 @@ ScriptedImporter:
     uvTransform: {x: 328, y: 363}
   - name: demon_slime_FREE_v1.0_Frame_25
     originalName: 
-    pivot: {x: 0.3139535, y: -0.00877193}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -643,7 +643,7 @@ ScriptedImporter:
     uvTransform: {x: 140, y: 363}
   - name: demon_slime_FREE_v1.0_Frame_26
     originalName: 
-    pivot: {x: 0.3139535, y: -0.009009009}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -663,7 +663,7 @@ ScriptedImporter:
     uvTransform: {x: 234, y: 363}
   - name: demon_slime_FREE_v1.0_Frame_27
     originalName: 
-    pivot: {x: 0.77272725, y: -0.00990099}
+    pivot: {x: 0.7, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -683,7 +683,7 @@ ScriptedImporter:
     uvTransform: {x: 305, y: 4}
   - name: demon_slime_FREE_v1.0_Frame_28
     originalName: 
-    pivot: {x: 0.77707005, y: -0.01980198}
+    pivot: {x: 0.7, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -703,7 +703,7 @@ ScriptedImporter:
     uvTransform: {x: 140, y: 4}
   - name: demon_slime_FREE_v1.0_Frame_29
     originalName: 
-    pivot: {x: 0.775, y: -0.010309278}
+    pivot: {x: 0.7, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -723,7 +723,7 @@ ScriptedImporter:
     uvTransform: {x: 467, y: 4}
   - name: demon_slime_FREE_v1.0_Frame_30
     originalName: 
-    pivot: {x: 0.64646465, y: -0.009803922}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -743,7 +743,7 @@ ScriptedImporter:
     uvTransform: {x: 344, y: 242}
   - name: demon_slime_FREE_v1.0_Frame_31
     originalName: 
-    pivot: {x: 0.55128205, y: -0.009803922}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -763,7 +763,7 @@ ScriptedImporter:
     uvTransform: {x: 942, y: 113}
   - name: demon_slime_FREE_v1.0_Frame_32
     originalName: 
-    pivot: {x: 0.475, y: -0.00952381}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -783,7 +783,7 @@ ScriptedImporter:
     uvTransform: {x: 316, y: 596}
   - name: demon_slime_FREE_v1.0_Frame_33
     originalName: 
-    pivot: {x: 0.475, y: -0.00952381}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -803,7 +803,7 @@ ScriptedImporter:
     uvTransform: {x: 404, y: 596}
   - name: demon_slime_FREE_v1.0_Frame_34
     originalName: 
-    pivot: {x: 0.32941172, y: -0.009708738}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -823,7 +823,7 @@ ScriptedImporter:
     uvTransform: {x: 140, y: 485}
   - name: demon_slime_FREE_v1.0_Frame_35
     originalName: 
-    pivot: {x: 0.30392158, y: -0.00952381}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -843,7 +843,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 911}
   - name: demon_slime_FREE_v1.0_Frame_36
     originalName: 
-    pivot: {x: 0.3666667, y: -0.009803922}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -863,7 +863,7 @@ ScriptedImporter:
     uvTransform: {x: 709, y: 363}
   - name: demon_slime_FREE_v1.0_Frame_37
     originalName: 
-    pivot: {x: 0.475, y: -0.009708738}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -883,7 +883,7 @@ ScriptedImporter:
     uvTransform: {x: 492, y: 596}
   - name: demon_slime_FREE_v1.0_Frame_38
     originalName: 
-    pivot: {x: 0.475, y: -0.011235955}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -903,7 +903,7 @@ ScriptedImporter:
     uvTransform: {x: 907, y: 596}
   - name: demon_slime_FREE_v1.0_Frame_39
     originalName: 
-    pivot: {x: 0.50000006, y: -0.010309278}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -923,7 +923,7 @@ ScriptedImporter:
     uvTransform: {x: 389, y: 485}
   - name: demon_slime_FREE_v1.0_Frame_40
     originalName: 
-    pivot: {x: 0.4852942, y: -0.010416667}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -943,7 +943,7 @@ ScriptedImporter:
     uvTransform: {x: 694, y: 485}
   - name: demon_slime_FREE_v1.0_Frame_41
     originalName: 
-    pivot: {x: 0.51388884, y: -0.01010101}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -963,7 +963,7 @@ ScriptedImporter:
     uvTransform: {x: 827, y: 596}
   - name: demon_slime_FREE_v1.0_Frame_42
     originalName: 
-    pivot: {x: 0.4204545, y: -0.00952381}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -983,7 +983,7 @@ ScriptedImporter:
     uvTransform: {x: 519, y: 363}
   - name: demon_slime_FREE_v1.0_Frame_43
     originalName: 
-    pivot: {x: 0.27368426, y: -0.0088495575}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1003,7 +1003,7 @@ ScriptedImporter:
     uvTransform: {x: 140, y: 242}
   - name: demon_slime_FREE_v1.0_Frame_44
     originalName: 
-    pivot: {x: 0.35042736, y: -0.008474576}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1023,7 +1023,7 @@ ScriptedImporter:
     uvTransform: {x: 817, y: 113}
   - name: demon_slime_FREE_v1.0_Frame_45
     originalName: 
-    pivot: {x: 0.34351143, y: -0.008264462}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1043,7 +1043,7 @@ ScriptedImporter:
     uvTransform: {x: 140, y: 113}
   - name: demon_slime_FREE_v1.0_Frame_46
     originalName: 
-    pivot: {x: 0.34375003, y: -0.008130081}
+    pivot: {x: 0.4, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1063,7 +1063,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 136}
   - name: demon_slime_FREE_v1.0_Frame_47
     originalName: 
-    pivot: {x: 0.34375003, y: -0.008264462}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1083,7 +1083,7 @@ ScriptedImporter:
     uvTransform: {x: 279, y: 113}
   - name: demon_slime_FREE_v1.0_Frame_48
     originalName: 
-    pivot: {x: 0.34375003, y: -0.008064516}
+    pivot: {x: 0.4, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1103,7 +1103,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: demon_slime_FREE_v1.0_Frame_49
     originalName: 
-    pivot: {x: 0.34375003, y: -0.009174312}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1123,7 +1123,7 @@ ScriptedImporter:
     uvTransform: {x: 681, y: 113}
   - name: demon_slime_FREE_v1.0_Frame_50
     originalName: 
-    pivot: {x: 0.32799998, y: -0.0088495575}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1143,7 +1143,7 @@ ScriptedImporter:
     uvTransform: {x: 548, y: 113}
   - name: demon_slime_FREE_v1.0_Frame_51
     originalName: 
-    pivot: {x: 0.32799998, y: -0.008695653}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1163,7 +1163,7 @@ ScriptedImporter:
     uvTransform: {x: 415, y: 113}
   - name: demon_slime_FREE_v1.0_Frame_52
     originalName: 
-    pivot: {x: 0.2941177, y: -0.00862069}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1183,7 +1183,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 529}
   - name: demon_slime_FREE_v1.0_Frame_53
     originalName: 
-    pivot: {x: 0.29203543, y: -0.008264462}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1203,7 +1203,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 782}
   - name: demon_slime_FREE_v1.0_Frame_54
     originalName: 
-    pivot: {x: 0.30701756, y: -0.008130081}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1223,7 +1223,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 267}
   - name: demon_slime_FREE_v1.0_Frame_55
     originalName: 
-    pivot: {x: 0.30701756, y: -0.008130081}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1243,7 +1243,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 398}
   - name: demon_slime_FREE_v1.0_Frame_56
     originalName: 
-    pivot: {x: 0.30701756, y: -0.008264462}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1263,7 +1263,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 653}
   - name: demon_slime_FREE_v1.0_Frame_57
     originalName: 
-    pivot: {x: 0.30701756, y: -0.011764706}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1283,7 +1283,7 @@ ScriptedImporter:
     uvTransform: {x: 747, y: 242}
   - name: demon_slime_FREE_v1.0_Frame_58
     originalName: 
-    pivot: {x: 0.30701756, y: -0.5}
+    pivot: {x: 0.49, y: 0.41}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
