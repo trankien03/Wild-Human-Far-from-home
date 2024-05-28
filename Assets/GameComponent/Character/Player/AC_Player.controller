@@ -859,7 +859,7 @@ AnimatorStateMachine:
   m_ChildStateMachines:
   - serializedVersion: 1
     m_StateMachine: {fileID: -3141764129680567152}
-    m_Position: {x: 190, y: -210, z: 0}
+    m_Position: {x: 90, y: -230, z: 0}
   - serializedVersion: 1
     m_StateMachine: {fileID: 6724767262082118829}
     m_Position: {x: 600, y: -100, z: 0}
@@ -883,7 +883,7 @@ AnimatorStateMachine:
     - {fileID: 813632523310999896}
     - {fileID: -6458212011391815750}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 580, y: -240, z: 0}
+  m_AnyStatePosition: {x: 590, y: -230, z: 0}
   m_EntryPosition: {x: 80, y: -80, z: 0}
   m_ExitPosition: {x: 870, y: -90, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
@@ -1040,7 +1040,7 @@ AnimatorController:
     m_DefaultBool: 1
     m_Controller: {fileID: 0}
   - m_Name: hit
-    m_Type: 4
+    m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
@@ -1691,7 +1691,7 @@ AnimatorStateTransition:
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
+  m_CanTransitionToSelf: 0
 --- !u!1101 &7406350873120367555
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -1784,6 +1784,23 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!114 &8472198775447361831
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0152231414a91464387bd8338a95c713, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boolname: canMove
+  updateOnState: 1
+  updateOnStateMachine: 0
+  valueOnEnter: 0
+  valueOnExit: 0
 --- !u!1101 &8496900996226933631
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -1820,7 +1837,8 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: 8472198775447361831}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1

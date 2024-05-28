@@ -110,17 +110,6 @@ public class PlayerController : MonoBehaviour
         } 
     }
 
-    public bool LockVelocity {
-        get
-        {
-            return animator.GetBool(AnimationStrings.lockVelocity) ;
-        }
-        private set 
-        { 
-            animator.SetBool (AnimationStrings.lockVelocity, value);
-        }
-    }
-
     Animator animator;
     Rigidbody2D rb;
 
@@ -201,7 +190,6 @@ public class PlayerController : MonoBehaviour
 
     public void OnHit(float damage, Vector2 knockback)
     {
-        LockVelocity = true;
         rb.velocity = new Vector2(knockback.x, rb.velocity.y + knockback.y);
 
     }

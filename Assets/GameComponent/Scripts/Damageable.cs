@@ -62,7 +62,7 @@ public class Damageable : MonoBehaviour
 
         }
     }
-
+    // the velocity should not be changed while this is true but needs to be respected by other component like the player controller
     public bool LockVelocity
     {
         get

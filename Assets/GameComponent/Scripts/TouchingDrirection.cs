@@ -6,7 +6,7 @@ public class TouchingDrirection : MonoBehaviour
 {
     public ContactFilter2D castFilter;
     public float groundDistance = 0.05f;
-    public float wallDistance = 0.2f;
+    public float wallDistance = 0.05f;
     public float cellingDistance = 0.05f;
 
 
@@ -15,7 +15,7 @@ public class TouchingDrirection : MonoBehaviour
 
     RaycastHit2D[] groundHits = new RaycastHit2D[5];
     RaycastHit2D[] wallHits = new RaycastHit2D[5];
-    RaycastHit2D[] cellingHits = new RaycastHit2D[5];
+    RaycastHit2D[] ceilingHits = new RaycastHit2D[5];
 
     [SerializeField]
     private bool _isGrounded;
@@ -50,19 +50,19 @@ public class TouchingDrirection : MonoBehaviour
     }
 
     [SerializeField]
-    private bool _isOnCelling;
+    private bool _isOnCeiling;
     private Vector2 wallCheckDritection => gameObject.transform.localScale.x > 0 ?  Vector2.right : Vector2.left;
 
-    public bool IsOnCelling
+    public bool IsOnCeiling
     {
         get
         {
-            return _isOnCelling;
+            return _isOnCeiling;
         }
         private set
         {
-            _isOnCelling = value;
-            animator.SetBool(AnimationStrings.isOnCelling, value);
+            _isOnCeiling = value;
+            animator.SetBool(AnimationStrings.isOnCeiling, value);
         }
     }
 
@@ -78,6 +78,6 @@ public class TouchingDrirection : MonoBehaviour
     {
         IsGrounded = touchingCol.Cast(Vector2.down, castFilter, groundHits, groundDistance) > 0;
         IsOnWall = touchingCol.Cast(wallCheckDritection, castFilter, wallHits, wallDistance) > 0;
-        IsOnCelling = touchingCol.Cast(Vector2.up, castFilter, cellingHits, cellingDistance) > 0;
+        IsOnCeiling = touchingCol.Cast(Vector2.up, castFilter, ceilingHits, cellingDistance) > 0;
     }
 }

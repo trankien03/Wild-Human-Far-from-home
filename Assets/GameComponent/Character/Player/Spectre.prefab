@@ -410,14 +410,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   castFilter:
     useTriggers: 0
-    useLayerMask: 0
+    useLayerMask: 1
     useDepth: 0
     useOutsideDepth: 0
     useNormalAngle: 0
     useOutsideNormalAngle: 0
     layerMask:
       serializedVersion: 2
-      m_Bits: 0
+      m_Bits: 64
     minDepth: 0
     maxDepth: 0
     minNormalAngle: 0
@@ -427,7 +427,7 @@ MonoBehaviour:
   cellingDistance: 0.05
   _isGrounded: 0
   _isOnWall: 0
-  _isOnCelling: 0
+  _isOnCeiling: 0
 --- !u!70 &1112539118629250375
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -494,7 +494,7 @@ MonoBehaviour:
   _health: 100
   _isAlive: 1
   isInvincible: 0
-  invincibilityTime: 0.25
+  invincibilityTime: 0.5
 --- !u!1 &6318639533236349329
 GameObject:
   m_ObjectHideFlags: 0
