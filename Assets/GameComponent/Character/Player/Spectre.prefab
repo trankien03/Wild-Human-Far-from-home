@@ -392,7 +392,7 @@ MonoBehaviour:
   walkSpeed: 100
   runSpeed: 200
   jumpImpluse: 7
-  airWalkSpeed: 150
+  airWalkSpeed: 200
   _isMoving: 0
   _IsRunning: 0
   _isFacingRight: 1

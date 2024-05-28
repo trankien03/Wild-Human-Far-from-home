@@ -3156,6 +3156,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2715176965987689203, guid: 47aa5e99f075ce14196d98d14e848365, type: 3}
+      propertyPath: airWalkSpeed
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 5946333728057760420, guid: 47aa5e99f075ce14196d98d14e848365, type: 3}
       propertyPath: m_Name
       value: Spectre
