@@ -252,43 +252,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a8a05de0ac134f4f9d01bef6b9da077, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &281618727 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5162257456951552599, guid: 750ea39657b48c64faf5e72dfc90de56, type: 3}
-  m_PrefabInstance: {fileID: 5999495590386907466}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &281618735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 281618727}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 909b5ae6b58fa734ba197be447ace777, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  castFilter:
-    useTriggers: 0
-    useLayerMask: 0
-    useDepth: 0
-    useOutsideDepth: 0
-    useNormalAngle: 0
-    useOutsideNormalAngle: 0
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 0
-    minDepth: 0
-    maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0
-  groundDistance: 0.05
-  wallDistance: 0.2
-  cellingDistance: 0.05
-  _isGrounded: 0
-  _isOnWall: 0
-  _isOnCelling: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -818,10 +781,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5162257456951552599, guid: 750ea39657b48c64faf5e72dfc90de56, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 281618735}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 750ea39657b48c64faf5e72dfc90de56, type: 3}
 --- !u!1001 &6394441484207823204
 PrefabInstance:
@@ -831,14 +791,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2715176965987689203, guid: 47aa5e99f075ce14196d98d14e848365, type: 3}
-      propertyPath: jumpImpluse
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2715176965987689203, guid: 47aa5e99f075ce14196d98d14e848365, type: 3}
-      propertyPath: airWalkSpeed
-      value: 150
-      objectReference: {fileID: 0}
     - target: {fileID: 5946333728057760420, guid: 47aa5e99f075ce14196d98d14e848365, type: 3}
       propertyPath: m_Name
       value: Spectre
