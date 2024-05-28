@@ -100,7 +100,7 @@ public class Damageable : MonoBehaviour
             }
             timeSinceHit += Time.deltaTime;
         }
-        //Hit(10, new Vector2(0,0));
+        //Hit(10, new Vector2(2,1));
 
     }
     public bool Hit(float damage, Vector2 knockback)
