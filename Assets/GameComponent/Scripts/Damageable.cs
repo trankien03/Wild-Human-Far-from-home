@@ -85,12 +85,14 @@ public class Damageable : MonoBehaviour
         }
 
     }
-    public void Hit(float damage)
+    public bool Hit(float damage, Vector2 knockback)
     {
         if (IsAlive && !isInvincible) 
         {
             Health -= damage;
             isInvincible = true;
+            return true;
         }
+        return false;
     }
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Attack : MonoBehaviour
 {
     public float attackDamage = 20.0f;
+    public  Vector2 knockback = Vector2.zero;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +24,8 @@ public class Attack : MonoBehaviour
 
         if (damageable != null) 
         {
-            damageable.Hit(attackDamage);
+            bool gothit = damageable.Hit(attackDamage, knockback);
+            if (gothit) Debug.Log(collision.name + "hiting" + attackDamage);
         }
     }
 }
