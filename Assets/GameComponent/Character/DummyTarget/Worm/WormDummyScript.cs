@@ -6,16 +6,24 @@ public class WormDummyScrpit : MonoBehaviour
 {
 
     // Start is called before the first frame update
-
+    Damageable damageable;     
     Rigidbody2D rb;
-    void Start()
-    {
-        rb.GetComponent<Rigidbody2D>();
-    }
+    Animator animator;
 
-    // Update is called once per frame
-    void Update()
+    private void Awake()
     {
-        
+        animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+        damageable = GetComponent<Damageable>();
+    }
+    
+
+    
+
+
+
+    public void OnHit(float damage, Vector2 knockback)
+    {
+        rb.velocity = new Vector2(knockback.x, rb.velocity.y + knockback.y);
     }
 }

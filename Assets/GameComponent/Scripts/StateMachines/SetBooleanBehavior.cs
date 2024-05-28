@@ -29,7 +29,7 @@ public class SetBooleanBehavior : StateMachineBehaviour
     {
         if (updateOnState)
         {
-            animator.SetBool(boolname, valueOnEnter);
+            animator.SetBool(boolname, valueOnExit);
         }
     }
 

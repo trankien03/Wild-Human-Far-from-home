@@ -3133,7 +3133,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6929993081038573415, guid: 750ea39657b48c64faf5e72dfc90de56, type: 3}
       propertyPath: invincibilityTime
-      value: 0.01
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 7507877537120271955, guid: 750ea39657b48c64faf5e72dfc90de56, type: 3}
+      propertyPath: m_Simulated
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8204841884333313783, guid: 750ea39657b48c64faf5e72dfc90de56, type: 3}
       propertyPath: m_Enabled
@@ -3152,10 +3156,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2715176965987689203, guid: 47aa5e99f075ce14196d98d14e848365, type: 3}
-      propertyPath: jumpImpluse
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 5946333728057760420, guid: 47aa5e99f075ce14196d98d14e848365, type: 3}
       propertyPath: m_Name
       value: Spectre
