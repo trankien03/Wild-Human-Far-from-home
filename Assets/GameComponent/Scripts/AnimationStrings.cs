@@ -9,8 +9,11 @@ public class AnimationStrings : MonoBehaviour
     internal static string isGrounded = "isGrounded";
     internal static string isOnWall = "isOnWall";
     internal static string isOnCelling = "isOnCelling";
+    internal static string isAlive = "isAlive";
+
     internal static string yVelocity = "yVelocity";
     internal static string canMove = "canMove";
+
     internal static string jump = "jump";
     internal static string attack = "attack";
 }
