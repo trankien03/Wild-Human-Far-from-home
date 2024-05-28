@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-[RequireComponent (typeof (Rigidbody2D), typeof (TouchingDrirection))]
+[RequireComponent (typeof (Rigidbody2D), typeof (TouchingDrirection), typeof (Damageable))]
 public class PlayerController : MonoBehaviour
 {
     public float walkSpeed = 200.0f;
@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     public float jumpImpluse = 250.0f;
     public float airWalkSpeed = 150.0f;
 
+    Damageable damageable;
 
     
 
@@ -67,7 +68,6 @@ public class PlayerController : MonoBehaviour
 
     Vector2 moveInput;
     TouchingDrirection touchingDrirection;
-    Rigidbody2D rb;
 
     [SerializeField]
     private bool _isMoving = false;
@@ -110,21 +110,35 @@ public class PlayerController : MonoBehaviour
         } 
     }
 
-   
+    public bool LockVelocity {
+        get
+        {
+            return animator.GetBool(AnimationStrings.lockVelocity) ;
+        }
+        private set 
+        { 
+            animator.SetBool (AnimationStrings.lockVelocity, value);
+        }
+    }
 
     Animator animator;
+    Rigidbody2D rb;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         touchingDrirection = GetComponent<TouchingDrirection>();
+        damageable =  GetComponent<Damageable>();
+        
     }
 
 
     private void FixedUpdate()  
     {
-        rb.velocity = new Vector2(moveInput.x * currentMoveSpeed * Time.fixedDeltaTime, rb.velocity.y);
+        if (!damageable.LockVelocity) 
+            rb.velocity = new Vector2(moveInput.x * currentMoveSpeed * Time.fixedDeltaTime, rb.velocity.y);
+
         animator.SetFloat(AnimationStrings.yVelocity, rb.velocity.y);
     }
 
@@ -183,6 +197,13 @@ public class PlayerController : MonoBehaviour
         {
             IsFacingRight = false;
         }
+    }
+
+    public void OnHit(float damage, Vector2 knockback)
+    {
+        LockVelocity = true;
+        rb.velocity = new Vector2(knockback.x, rb.velocity.y + knockback.y);
+
     }
     
 }
