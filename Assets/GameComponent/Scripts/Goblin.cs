@@ -22,7 +22,7 @@ public class Knight : MonoBehaviour
     {
         get { return _walkDirection; }
         set { 
-            if(_walkDirection != value)
+            if(_walkDirection != value && !animator.GetBool(AnimationStrings.lockVelocity))
             {
                 //direction flipped
                 gameObject.transform.localScale = new Vector2(gameObject.transform.localScale.x * -1, gameObject.transform.localScale.y);
@@ -91,11 +91,13 @@ public class Knight : MonoBehaviour
     private void FlipDirection()
     {
         if (WalkDirection == WalkableDirection.Right)
-        { 
+        {
+            
             WalkDirection = WalkableDirection.Left;
         }
         else if (WalkDirection == WalkableDirection.Left)
         {
+            
             WalkDirection = WalkableDirection.Right;
         }
         else
