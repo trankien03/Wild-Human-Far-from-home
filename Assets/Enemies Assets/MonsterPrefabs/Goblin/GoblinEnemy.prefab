@@ -203,7 +203,7 @@ GameObject:
   - component: {fileID: 4038692688067002924}
   - component: {fileID: 2533661982811014470}
   - component: {fileID: 5193018085015180702}
-  - component: {fileID: 2894314919417601847}
+  - component: {fileID: 3619682353300683256}
   m_Layer: 8
   m_Name: GoblinEnemy
   m_TagString: Untagged
@@ -443,7 +443,7 @@ MonoBehaviour:
   _isAlive: 1
   isInvincible: 0
   invincibilityTime: 0.25
---- !u!114 &2894314919417601847
+--- !u!114 &3619682353300683256
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -452,8 +452,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 2547398057669821651}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88b07183237ffa849a5c309a4921febd, type: 3}
+  m_Script: {fileID: 11500000, guid: 6ed60b2441f5cc84884f101c910bf3a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   attackDamage: 20
-  Knockback: {x: 5, y: 2}
+  Knockback: {x: 2, y: 1}
