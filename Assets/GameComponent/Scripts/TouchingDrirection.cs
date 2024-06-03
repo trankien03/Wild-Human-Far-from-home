@@ -74,6 +74,7 @@ public class TouchingDrirection : MonoBehaviour
 
 
     
+
     private void FixedUpdate()
     {
         IsGrounded = touchingCol.Cast(Vector2.down, castFilter, groundHits, groundDistance) > 0;

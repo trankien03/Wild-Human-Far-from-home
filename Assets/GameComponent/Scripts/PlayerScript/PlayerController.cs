@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-[RequireComponent (typeof (Rigidbody2D), typeof (TouchingDirectionForPlayer), typeof (Damageable))]
+[RequireComponent (typeof (Rigidbody2D), typeof (TouchingDirectionForPlayer), typeof (DamageableForPlayer))]
 public class PlayerController : MonoBehaviour
 {
     public float walkSpeed = 200.0f;
@@ -12,31 +12,18 @@ public class PlayerController : MonoBehaviour
     public float jumpImpluse = 250.0f;
     public float airWalkSpeed = 150.0f;
 
-    Damageable damageable;
+    DamageableForPlayer damageable;
 
     
 
     public float currentMoveSpeed {
         get
         {
-            if (CanMove)
+            if (CanMove && !touchingDrirection.IsOnWall)
             {
-                if (IsMoving && !touchingDrirection.IsOnWall )
-                {
-                    if (touchingDrirection.IsGrounded)
-                    {
-                        if (IsRunning) return runSpeed;
-                        else return walkSpeed;
-                    }
-                    else
-                    {
-                        return airWalkSpeed;
-                    }
-                }
-                else
-                {
-                    return 0;
-                }
+                if (IsRunning) return runSpeed;
+                else return walkSpeed;
+                  
             }
             else return 0;
         }
@@ -121,7 +108,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         touchingDrirection = GetComponent<TouchingDirectionForPlayer>();
-        damageable =  GetComponent<Damageable>();
+        damageable =  GetComponent<DamageableForPlayer>();
         
     }
 
@@ -153,12 +140,9 @@ public class PlayerController : MonoBehaviour
     {
         if (context.started) 
         {
-            IsRunning = true;
+            IsRunning = !IsRunning;
         }
-        else if (context.canceled)
-        {
-            IsRunning = false;
-        }
+        
     }
 
     public void OnJump(InputAction.CallbackContext context)

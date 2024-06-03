@@ -11,6 +11,8 @@ public class AnimationStrings : MonoBehaviour
     internal static string isOnCeiling = "isOnCelling";
     internal static string isAlive = "isAlive";
     internal static string isHit = "isHit";
+    internal static string isOutOfTime = "isOutOfTime";
+
 
     internal static string yVelocity = "yVelocity";
     internal static string canMove = "canMove";
