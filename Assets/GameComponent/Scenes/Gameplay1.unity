@@ -3184,6 +3184,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7687675534345663851, guid: 61cf6b5ad85e2a54484c066bbf6ed544, type: 3}
+      propertyPath: m_XDamping
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687675534345663851, guid: 61cf6b5ad85e2a54484c066bbf6ed544, type: 3}
+      propertyPath: m_YDamping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687675534345663851, guid: 61cf6b5ad85e2a54484c066bbf6ed544, type: 3}
+      propertyPath: m_ZDamping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687675534345663851, guid: 61cf6b5ad85e2a54484c066bbf6ed544, type: 3}
+      propertyPath: m_LookaheadTime
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687675534345663851, guid: 61cf6b5ad85e2a54484c066bbf6ed544, type: 3}
+      propertyPath: m_SoftZoneWidth
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687675534345663851, guid: 61cf6b5ad85e2a54484c066bbf6ed544, type: 3}
+      propertyPath: m_SoftZoneHeight
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687675534345663851, guid: 61cf6b5ad85e2a54484c066bbf6ed544, type: 3}
+      propertyPath: m_TrackedObjectOffset.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687675534345663851, guid: 61cf6b5ad85e2a54484c066bbf6ed544, type: 3}
+      propertyPath: m_TrackedObjectOffset.y
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
