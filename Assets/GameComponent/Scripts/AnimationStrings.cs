@@ -24,4 +24,6 @@ public class AnimationStrings : MonoBehaviour
     internal static string lockVelocity = "lockVelocity";
 
     internal static string hasTarget = "hasTarget";
+
+    internal static string isFar = "isFar";
 }
