@@ -407,26 +407,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &595151271 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5946333728057760420, guid: 47aa5e99f075ce14196d98d14e848365, type: 3}
-  m_PrefabInstance: {fileID: 859745072}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &595151281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 595151271}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815198dc10a1b164bb1f7ff77e0cc525, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timerText: {fileID: 0}
-  remainingTime: 20
-  _isOutOfTime: 0
 --- !u!1 &702732414
 GameObject:
   m_ObjectHideFlags: 0
@@ -608,10 +588,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3922119061072454209, guid: 47aa5e99f075ce14196d98d14e848365, type: 3}
-      propertyPath: m_fontSize
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 3922119061072454209, guid: 47aa5e99f075ce14196d98d14e848365, type: 3}
       propertyPath: m_margin.y
       value: -88.81317
       objectReference: {fileID: 0}
@@ -624,8 +600,8 @@ PrefabInstance:
       value: Spectre
       objectReference: {fileID: 0}
     - target: {fileID: 7401738646100123494, guid: 47aa5e99f075ce14196d98d14e848365, type: 3}
-      propertyPath: remainingTime
-      value: 20
+      propertyPath: _isOutOfTime
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7590967020409492816, guid: 47aa5e99f075ce14196d98d14e848365, type: 3}
       propertyPath: m_Camera
@@ -682,10 +658,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5946333728057760420, guid: 47aa5e99f075ce14196d98d14e848365, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 595151281}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47aa5e99f075ce14196d98d14e848365, type: 3}
 --- !u!1 &919692869
 GameObject:
