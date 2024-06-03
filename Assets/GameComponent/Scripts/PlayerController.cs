@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-[RequireComponent (typeof (Rigidbody2D), typeof (TouchingDrirection), typeof (Damageable))]
+[RequireComponent (typeof (Rigidbody2D), typeof (TouchingDirectionForPlayer), typeof (Damageable))]
 public class PlayerController : MonoBehaviour
 {
     public float walkSpeed = 200.0f;
@@ -67,7 +67,7 @@ public class PlayerController : MonoBehaviour
 
 
     Vector2 moveInput;
-    TouchingDrirection touchingDrirection;
+    TouchingDirectionForPlayer touchingDrirection;
 
     [SerializeField]
     private bool _isMoving = false;
@@ -104,11 +104,14 @@ public class PlayerController : MonoBehaviour
         private set { 
             if (_isFacingRight != value)
             {
-                transform.localScale *= new Vector2(-1, 1);
+                float rotation = 0f;
+                if (!value) rotation = 180f;
+                transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, rotation, transform.rotation.z));               
             }
             _isFacingRight = value;
         } 
     }
+
 
     Animator animator;
     Rigidbody2D rb;
@@ -117,7 +120,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        touchingDrirection = GetComponent<TouchingDrirection>();
+        touchingDrirection = GetComponent<TouchingDirectionForPlayer>();
         damageable =  GetComponent<Damageable>();
         
     }
@@ -126,7 +129,7 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()  
     {
         if (!damageable.LockVelocity) 
-            rb.velocity = new Vector2(moveInput.x * currentMoveSpeed * Time.fixedDeltaTime, rb.velocity.y);
+            rb.velocity = new Vector2(moveInput.x * currentMoveSpeed , rb.velocity.y);
 
         animator.SetFloat(AnimationStrings.yVelocity, rb.velocity.y);
     }
@@ -174,7 +177,20 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetTrigger(AnimationStrings.attack);
         }
-    }   
+
+        if (context.started && !touchingDrirection.IsGrounded)
+        {
+            animator.SetTrigger(AnimationStrings.attack);
+        }
+    }
+
+    public void OnAttackCombo2(InputAction.CallbackContext context)
+    {
+        if (context.started && touchingDrirection.IsGrounded)
+        {
+            animator.SetTrigger(AnimationStrings.attackComboB);
+        }
+    }
 
     private void setFacingDirection(Vector2 moveInput)
     {

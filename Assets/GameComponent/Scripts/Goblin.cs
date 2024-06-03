@@ -20,7 +20,8 @@ public class Knight : MonoBehaviour
     private WalkableDirection _walkDirection;
     private WalkableDirection WalkDirection
     {
-        get { return _walkDirection; }
+        get 
+        { return _walkDirection; }
         set { 
             if(_walkDirection != value && !animator.GetBool(AnimationStrings.lockVelocity))
             {

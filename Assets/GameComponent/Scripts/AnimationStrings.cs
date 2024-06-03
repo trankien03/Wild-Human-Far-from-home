@@ -17,6 +17,7 @@ public class AnimationStrings : MonoBehaviour
 
     internal static string jump = "jump";
     internal static string attack = "attack";
+    internal static string attackComboB = "attackComboB";
     internal static string hitTrigger = "hit";
     internal static string lockVelocity = "lockVelocity";
 
