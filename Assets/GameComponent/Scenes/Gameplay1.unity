@@ -353,7 +353,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.37, y: -0.85, z: -10}
+  m_LocalPosition: {x: -5.37, y: 1.15, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -393,6 +393,17 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &950926538 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 631453852942423717, guid: aaf30366230263148908ec0143637e70, type: 3}
+  m_PrefabInstance: {fileID: 8908761104886140270}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0566be700a9ef854f93c8748181b4a9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1086847853
 GameObject:
   m_ObjectHideFlags: 0
@@ -791,6 +802,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ababc9f7106065745b9c59f4f719e929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveFowardSpd: 0
   fireDetectionZone: {fileID: 0}
   _hasTarget: 0
 --- !u!1 &1875646809
@@ -3146,11 +3158,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7623702235814287817, guid: 61cf6b5ad85e2a54484c066bbf6ed544, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.37
+      value: -5.37
       objectReference: {fileID: 0}
     - target: {fileID: 7623702235814287817, guid: 61cf6b5ad85e2a54484c066bbf6ed544, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.85
+      value: 1.15
       objectReference: {fileID: 0}
     - target: {fileID: 7623702235814287817, guid: 61cf6b5ad85e2a54484c066bbf6ed544, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3451,6 +3463,10 @@ PrefabInstance:
       propertyPath: maxSpeed
       value: 1.24
       objectReference: {fileID: 0}
+    - target: {fileID: 5991718264636429562, guid: aaf30366230263148908ec0143637e70, type: 3}
+      propertyPath: detectionZone
+      value: 
+      objectReference: {fileID: 950926538}
     - target: {fileID: 8520515744642816443, guid: aaf30366230263148908ec0143637e70, type: 3}
       propertyPath: _maxHealth
       value: 50

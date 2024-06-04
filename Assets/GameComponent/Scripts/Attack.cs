@@ -9,12 +9,13 @@ public class Attack : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Damageable damageable = collision.GetComponent<Damageable>();
 
-        if (damageable != null)
+        DamageableForPlayer damageableforf = collision.GetComponent<DamageableForPlayer>();
+
+        if (damageableforf != null)
         {
             Vector2 delivererdKnockback = transform.parent.localScale.x > 0 ? Knockback : new Vector2(-Knockback.x, Knockback.y);
-            bool gothit = damageable.Hit(attackDamage, delivererdKnockback);
+            bool gothit = damageableforf.Hit(attackDamage, delivererdKnockback);
             if (gothit) Debug.Log(collision.name + "hiting" + attackDamage);
         }
     }
