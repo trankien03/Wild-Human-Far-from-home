@@ -1,20 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Security.Cryptography;
 using UnityEngine;
 
-public class PlayerTracking : MonoBehaviour
+public class GoblinTrackingPlayer : MonoBehaviour
 {
     public float maxSpeed = 5f;
 
     private Transform player;
     private Rigidbody2D rb;
 
-    public wormController wormContrl;
+    public Knight knightContrl;
     //public DetectionZone detectionZone;
     //private PlayerController playerController;
     Animator animator;
-   
+
 
     private void Awake()
     {
@@ -35,7 +34,7 @@ public class PlayerTracking : MonoBehaviour
         {
             transform.localScale = new Vector3(-2, 2, 1);
             //move if player out of the range attack
-            if (!wormContrl.HasTarget)
+            if (!knightContrl.HasTarget )
             {
                 Vector2 pos = transform.position;
                 Vector2 velocity = new Vector2(maxSpeed * Time.deltaTime, 0);
@@ -43,13 +42,12 @@ public class PlayerTracking : MonoBehaviour
                 transform.position = pos;
             }
 
-
         }
         else if (rb.position.x - player.position.x < 0)
         {
             transform.localScale = new Vector3(2, 2, 1);
 
-            if (!wormContrl.HasTarget)
+            if (!knightContrl.HasTarget)
             {
                 Vector2 pos = transform.position;
                 Vector2 velocity = new Vector2(maxSpeed * Time.deltaTime, 0);
@@ -59,5 +57,4 @@ public class PlayerTracking : MonoBehaviour
         }
 
     }
-
 }

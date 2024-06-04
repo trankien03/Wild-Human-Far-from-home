@@ -200,10 +200,10 @@ GameObject:
   - component: {fileID: 793227650082648970}
   - component: {fileID: 698382728284657214}
   - component: {fileID: 2750838877173390096}
-  - component: {fileID: 4038692688067002924}
   - component: {fileID: 2533661982811014470}
   - component: {fileID: 5193018085015180702}
   - component: {fileID: 3619682353300683256}
+  - component: {fileID: 4252199225223201883}
   m_Layer: 8
   m_Name: GoblinEnemy
   m_TagString: Untagged
@@ -358,38 +358,6 @@ MonoBehaviour:
   attackZone: {fileID: 2085918366954222109}
   walkStopRate: 0.6
   _hasTarget: 0
---- !u!114 &4038692688067002924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2547398057669821651}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 909b5ae6b58fa734ba197be447ace777, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  castFilter:
-    useTriggers: 0
-    useLayerMask: 1
-    useDepth: 0
-    useOutsideDepth: 0
-    useNormalAngle: 0
-    useOutsideNormalAngle: 0
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 64
-    minDepth: 0
-    maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0
-  groundDistance: 0.05
-  wallDistance: 0.1
-  cellingDistance: 0.05
-  _isGrounded: 0
-  _isOnWall: 0
-  _isOnCeiling: 0
 --- !u!95 &2533661982811014470
 Animator:
   serializedVersion: 5
@@ -457,3 +425,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackDamage: 20
   Knockback: {x: 2, y: 1}
+--- !u!114 &4252199225223201883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2547398057669821651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47ca2be0d8b9119428201da45c9c767a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSpeed: 2
+  knightContrl: {fileID: 2750838877173390096}

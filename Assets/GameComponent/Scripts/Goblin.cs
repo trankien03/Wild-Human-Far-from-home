@@ -9,14 +9,14 @@ public class Knight : MonoBehaviour
     public DetectionZone attackZone;
     public float walkStopRate = 0.6f;
 
-    Rigidbody2D rb;
-    TouchingDrirection touchingDrirection;
-    Animator animator;
-    Damageable damageable;
+    private Damageable damageable;
 
+    Rigidbody2D rb;
+    Animator animator;
+    /*  
     public enum WalkableDirection { Left, Right }
     private Vector2 walkDirectionVector = Vector2.right;
-
+    
     private WalkableDirection _walkDirection;
     private WalkableDirection WalkDirection
     {
@@ -41,7 +41,7 @@ public class Knight : MonoBehaviour
             
             _walkDirection = value; }
     }
-
+    */
     public bool _hasTarget = false;
     public bool HasTarget { get { return _hasTarget; } 
         private set { 
@@ -49,7 +49,7 @@ public class Knight : MonoBehaviour
             animator.SetBool(AnimationStrings.hasTarget, value);
         } 
     }
-
+    
     public bool CanMove
     {
         get
@@ -57,38 +57,27 @@ public class Knight : MonoBehaviour
             return animator.GetBool(AnimationStrings.canMove);
         }
     }
-
+    
     private void Awake()
     {
        rb = GetComponent<Rigidbody2D>();
-       touchingDrirection = GetComponent<TouchingDrirection>();
        animator = GetComponent<Animator>();
-       damageable = GetComponent<Damageable>();
     }
 
     private void Update()
     {
         HasTarget = attackZone.detectedColliders.Count > 0;
     }
-
+    
     private void FixedUpdate()
     {
-        if (touchingDrirection.IsGrounded && touchingDrirection.IsOnWall)
-        {
-            FlipDirection();
-            
-        }
         if (!damageable.LockVelocity)
         {
-            if (CanMove)
-                rb.velocity = new Vector2(walkSpeed * walkDirectionVector.x, rb.velocity.y);
-            else
+            if (!CanMove)
                 rb.velocity = new Vector2(Mathf.Lerp(rb.velocity.x, 0, walkStopRate), rb.velocity.y);
         }
-
-
     }
-
+    /*
     private void FlipDirection()
     {
         if (WalkDirection == WalkableDirection.Right)
@@ -107,7 +96,7 @@ public class Knight : MonoBehaviour
         }
     }
 
-
+    */
 
     public void OnHit(float damage, Vector2 knockback)
     {

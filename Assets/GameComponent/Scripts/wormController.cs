@@ -8,6 +8,8 @@ public class wormController : MonoBehaviour
 
     Rigidbody2D rb;
     Animator animator;
+    public float walkStopRate = 0.6f;
+    private Damageable damageable;
 
     public DetectionZone fireDetectionZone;
 
@@ -22,7 +24,13 @@ public class wormController : MonoBehaviour
         }
     }
 
-
+    public bool CanMove
+    {
+        get
+        {
+            return animator.GetBool(AnimationStrings.canMove);
+        }
+    }
 
     public void Awake()
     {
@@ -34,6 +42,15 @@ public class wormController : MonoBehaviour
     void Update()
     {
         HasTarget = fireDetectionZone.detectedColliders.Count > 0;    
+    }
+
+    private void FixedUpdate()
+    {
+        if (!damageable.LockVelocity)
+        {
+            if (!CanMove)
+                rb.velocity = new Vector2(Mathf.Lerp(rb.velocity.x, 0, walkStopRate), rb.velocity.y);
+        }
     }
 
     public void OnHit(float damage, Vector2 knockback)
