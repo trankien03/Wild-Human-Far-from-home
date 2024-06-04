@@ -104,8 +104,6 @@ public class DamageableForPlayer : MonoBehaviour
         }
 
         if (animator.GetBool(AnimationStrings.isOutOfTime)) IsAlive = false;
-        //Hit(10, new Vector2(2,1));
-
     }
     public bool Hit(float damage, Vector2 knockback)
     {
