@@ -35,7 +35,7 @@ public class PlayerTracking : MonoBehaviour
         {
             transform.localScale = new Vector3(-2, 2, 1);
             //move if player out of the range attack
-            if (!wormContrl.HasTarget)
+            if (!wormContrl.HasTarget && !wormContrl.CanMove)
             {
                 Vector2 pos = transform.position;
                 Vector2 velocity = new Vector2(maxSpeed * Time.deltaTime, 0);
@@ -49,7 +49,7 @@ public class PlayerTracking : MonoBehaviour
         {
             transform.localScale = new Vector3(2, 2, 1);
 
-            if (!wormContrl.HasTarget)
+            if (!wormContrl.HasTarget && !wormContrl.CanMove)
             {
                 Vector2 pos = transform.position;
                 Vector2 velocity = new Vector2(maxSpeed * Time.deltaTime, 0);

@@ -774,6 +774,17 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1580253414 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6847121119639821168, guid: aaf30366230263148908ec0143637e70, type: 3}
+  m_PrefabInstance: {fileID: 8908761104886140270}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580253409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ababc9f7106065745b9c59f4f719e929, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1763198743 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2750838877173390096, guid: b62b8f17003fab44b8c7a924f39ac5dc, type: 3}
@@ -803,6 +814,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveFowardSpd: 0
+  walkStopRate: 0.6
   fireDetectionZone: {fileID: 0}
   _hasTarget: 0
 --- !u!1 &1875646809
@@ -3463,6 +3475,10 @@ PrefabInstance:
       propertyPath: maxSpeed
       value: 1.24
       objectReference: {fileID: 0}
+    - target: {fileID: 5991718264636429562, guid: aaf30366230263148908ec0143637e70, type: 3}
+      propertyPath: wormContrl
+      value: 
+      objectReference: {fileID: 1580253414}
     - target: {fileID: 5991718264636429562, guid: aaf30366230263148908ec0143637e70, type: 3}
       propertyPath: detectionZone
       value: 

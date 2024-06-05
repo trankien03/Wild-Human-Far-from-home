@@ -34,7 +34,7 @@ public class GoblinTrackingPlayer : MonoBehaviour
         {
             transform.localScale = new Vector3(-2, 2, 1);
             //move if player out of the range attack
-            if (!knightContrl.HasTarget )
+            if (!knightContrl.HasTarget && knightContrl.CanMove)
             {
                 Vector2 pos = transform.position;
                 Vector2 velocity = new Vector2(maxSpeed * Time.deltaTime, 0);
@@ -47,7 +47,7 @@ public class GoblinTrackingPlayer : MonoBehaviour
         {
             transform.localScale = new Vector3(2, 2, 1);
 
-            if (!knightContrl.HasTarget)
+            if (!knightContrl.HasTarget && knightContrl.CanMove)
             {
                 Vector2 pos = transform.position;
                 Vector2 velocity = new Vector2(maxSpeed * Time.deltaTime, 0);

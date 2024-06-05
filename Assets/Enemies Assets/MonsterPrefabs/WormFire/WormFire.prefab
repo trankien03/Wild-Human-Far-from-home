@@ -250,7 +250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 5
-  wormContrl: {fileID: 0}
+  wormContrl: {fileID: 6847121119639821168}
 --- !u!61 &7646798363431472864
 BoxCollider2D:
   m_ObjectHideFlags: 0
