@@ -5,14 +5,24 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public int damage = 10;
+    public float damage = 10f;
     public Vector2 moveSpeed = new Vector2(3f,0);
     Rigidbody2D rb;
+    public float timer = 5f;
 
     public Vector2 Knockback = new Vector2(0, 0);
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+    }
+
+    private void Update()
+    {
+        timer -= Time.deltaTime;
+        if (timer <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void Start()
@@ -22,18 +32,20 @@ public class Projectile : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Damageable damageable = collision.GetComponent<Damageable>();
-        if (damageable != null)
+        DamageableForPlayer damageableforf = collision.GetComponent<DamageableForPlayer>();
+        if (damageableforf != null)
         {
             {
                 Vector2 delivererdKnockback = transform.localScale.x > 0 ? Knockback : new Vector2(-Knockback.x, Knockback.y);
-                bool gothit = damageable .Hit(damage, delivererdKnockback);
+                bool gothit = damageableforf.Hit(damage, delivererdKnockback);
                 if (gothit)
                 {
                     Debug.Log(collision.name + "hiting" + damage);
+
                     Destroy(gameObject);
                 }
             }
         }
+        
     }
 }
