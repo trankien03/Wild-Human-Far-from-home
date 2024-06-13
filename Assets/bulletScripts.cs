@@ -1,60 +1,51 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 
-public class Projectile : MonoBehaviour
+public class bulletScripts : MonoBehaviour
 {
-    public float damage = 10f;
-    public Vector2 moveSpeed = new Vector2(3f,0);
+    public GameObject target;
+    public float speed = 2.0f;
     Rigidbody2D rb;
+    public float damage = 10f;
     public float timer = 5f;
-
-    private Animator animator;
-
     public Vector2 Knockback = new Vector2(0, 0);
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+    }
+    // Start is called before the first frame update
+    void Start()
+    {
+        target = GameObject.FindGameObjectWithTag("Player");
+        Vector2 moveDir = (target.transform.position - transform.position).normalized * speed;
+        rb.velocity = new Vector2(moveDir.x, moveDir.y);
+        Destroy(this.gameObject,10);
     }
 
-    private void Update()
+    // Update is called once per frame
+    void Update()
     {
-        timer -= Time.deltaTime;
-        if (timer <= 0)
-        {
-            Destroy(gameObject);
-        }
+        
     }
 
-    private void Start()
-    {
-        //if you want the projectile to be effected by gravity by default, make it dynamic mode rigidbody
-        rb.velocity = new Vector2(moveSpeed.x * transform.localScale.x, moveSpeed.y);
-    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         DamageableForPlayer damageableforf = collision.GetComponent<DamageableForPlayer>();
         if (damageableforf != null)
         {
-           
+
             Vector2 delivererdKnockback = transform.localScale.x > 0 ? Knockback : new Vector2(-Knockback.x, Knockback.y);
             bool gothit = damageableforf.Hit(damage, delivererdKnockback);
             if (gothit)
             {
                 Debug.Log(collision.name + "hiting" + damage);
-                
+
                 Destroy(gameObject);
             }
         }
-        
-    }
-    public bool Hit()
-    {
 
-        animator.SetTrigger(AnimationStrings.hitTrigger);
-       
-        return true;
     }
+
 }
