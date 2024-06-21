@@ -26,7 +26,8 @@ public class CDTimer : MonoBehaviour
     }
     private void Awake()
     {
-        animator = GetComponent<Animator>();
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        animator = player.GetComponent<Animator>();
     }
 
     void Update()

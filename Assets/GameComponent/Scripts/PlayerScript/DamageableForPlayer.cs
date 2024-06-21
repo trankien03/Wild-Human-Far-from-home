@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-[RequireComponent(typeof(CDTimer))]
+
 public class DamageableForPlayer : MonoBehaviour
 {
     public UnityEvent<float, Vector2> damageableHit;
 
     Animator animator;
-    CDTimer timer;
+
 
     [SerializeField]
     private float _maxHealth = 100.0f;
