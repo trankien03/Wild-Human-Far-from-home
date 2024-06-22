@@ -36,6 +36,7 @@ public class wormController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        damageable = GetComponent<Damageable>();
     }
 
     // Update is called once per frame
@@ -46,7 +47,7 @@ public class wormController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!damageable.LockVelocity)
+        if (damageable.LockVelocity == false)
         {
             if (!CanMove)
                 rb.velocity = new Vector2(Mathf.Lerp(rb.velocity.x, 0, walkStopRate), rb.velocity.y);

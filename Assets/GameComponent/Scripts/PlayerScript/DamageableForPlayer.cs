@@ -8,6 +8,8 @@ public class DamageableForPlayer : MonoBehaviour
 {
     public UnityEvent<float, Vector2> damageableHit;
 
+    public UnityEvent<float, float> healthChanged;
+
     Animator animator;
 
 
@@ -34,11 +36,13 @@ public class DamageableForPlayer : MonoBehaviour
     {
         get
         {
+          
             return _health;
         }
         set
         {
             _health = value;
+            healthChanged?.Invoke(_health, maxHealth);
             if (_health <= 0 || animator.GetBool(AnimationStrings.isOutOfTime))
             {
                 IsAlive = false;

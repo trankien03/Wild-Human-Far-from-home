@@ -62,6 +62,7 @@ public class Knight : MonoBehaviour
     {
        rb = GetComponent<Rigidbody2D>();
        animator = GetComponent<Animator>();
+       damageable = GetComponent<Damageable>();
     }
 
     private void Update()
@@ -71,7 +72,8 @@ public class Knight : MonoBehaviour
     
     private void FixedUpdate()
     {
-        if (!damageable.LockVelocity)
+
+        if (damageable.LockVelocity == false)
         {
             if (!CanMove)
                 rb.velocity = new Vector2(Mathf.Lerp(rb.velocity.x, 0, walkStopRate), rb.velocity.y);

@@ -7,6 +7,7 @@ public class Damageable : MonoBehaviour
 {
     public UnityEvent<float, Vector2> damageableHit;
 
+    public UnityEvent<bool> VelocityLocking;
     Animator animator;
 
     [SerializeField]
@@ -57,21 +58,27 @@ public class Damageable : MonoBehaviour
         set
         {
             _isAlive = value;
+            VelocityLocking?.Invoke(value);
             animator.SetBool(AnimationStrings.isAlive, value);
             Debug.Log("IsAlive set " + value);
 
         }
     }
     // the velocity should not be changed while this is true but needs to be respected by other component like the player controller
+    [SerializeField]
+    private bool _lockVelocity = false;
     public bool LockVelocity
     {
         get
         {
-            return animator.GetBool(AnimationStrings.lockVelocity);
+            return _lockVelocity = false;
         }
-        private set
+        set
         {
+
+            _lockVelocity = value;
             animator.SetBool(AnimationStrings.lockVelocity, value);
+
         }
     }
 

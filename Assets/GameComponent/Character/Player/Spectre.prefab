@@ -309,7 +309,6 @@ GameObject:
   - component: {fileID: 1112539118629250375}
   - component: {fileID: 708330702805515108}
   - component: {fileID: 4340032239387428256}
-  - component: {fileID: 5998589266654274960}
   - component: {fileID: 8489893945922734744}
   m_Layer: 7
   m_Name: Spectre
@@ -726,21 +725,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6778506, y: 1.1895008}
   m_EdgeRadius: 0
---- !u!114 &5998589266654274960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5946333728057760420}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815198dc10a1b164bb1f7ff77e0cc525, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timerText: {fileID: 0}
-  remainingTime: 10
-  _isOutOfTime: 0
 --- !u!114 &8489893945922734744
 MonoBehaviour:
   m_ObjectHideFlags: 0
