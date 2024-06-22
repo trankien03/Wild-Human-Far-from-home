@@ -9,9 +9,9 @@ EditorBuildSettings:
     path: Assets/GameComponent/Scenes/Main menu.unity
     guid: f5f44e504661fb444b4e1081aed8839c
   - enabled: 1
-    path: Assets/GameComponent/Scenes/Gameplay1.unity
+    path: Assets/GameComponent/Scenes/Map 1 - Heroes Field.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/GameComponent/Scenes/Map1.unity
+    path: Assets/GameComponent/Scenes/Map 2 - Oak Wood.unity
     guid: cfa4be59f725adf40afce58eb8004136
   m_configObjects: {}
