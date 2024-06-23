@@ -49,7 +49,7 @@ public class WinningMenu : MonoBehaviour
         if (StageProgress.gotHit >=8) multiply = 0.8f;
         if (StageProgress.gotHit <=2) multiply = 1.2f;
 
-        int total = Mathf.FloorToInt( (StageProgress.enemyDeathCount*10*multiply + StageProgress.bossDeathCount*10*multiply + timer.getTime()) / 1 );
+        int total = Mathf.FloorToInt( (StageProgress.enemyDeathCount*10*multiply + StageProgress.bossDeathCount*1000*multiply + timer.getTime()) / 1 );
 
 
         enemyDefeated.text = "Enemy defeated: " + StageProgress.enemyDeathCount + " (x10)";
