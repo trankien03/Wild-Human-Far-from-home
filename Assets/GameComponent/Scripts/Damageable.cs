@@ -9,6 +9,7 @@ public class Damageable : MonoBehaviour
 
     public UnityEvent<bool> VelocityLocking;
     Animator animator;
+    public bool isDead = false;
 
     [SerializeField]
     private float _maxHealth = 100.0f;
@@ -88,7 +89,7 @@ public class Damageable : MonoBehaviour
 
 
     private float timeSinceHit;
-    public float invincibilityTime = 0.25f;
+    public float invincibilityTime = 0.1f;
 
 
     private void Awake()

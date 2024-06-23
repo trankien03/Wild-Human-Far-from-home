@@ -176,7 +176,7 @@ MonoBehaviour:
   _isAlive: 1
   _lockVelocity: 0
   isInvincible: 0
-  invincibilityTime: 0.25
+  invincibilityTime: 0.1
 --- !u!114 &6847121119639821168
 MonoBehaviour:
   m_ObjectHideFlags: 0

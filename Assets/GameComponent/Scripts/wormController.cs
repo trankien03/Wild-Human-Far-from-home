@@ -37,6 +37,8 @@ public class wormController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         damageable = GetComponent<Damageable>();
+        
+
     }
 
     // Update is called once per frame

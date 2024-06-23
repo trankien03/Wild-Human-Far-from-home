@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayOneShotBehavior : StateMachineBehaviour
 {
     public AudioClip soundToPlay;
-    public float volume = 1f;
+    public float volume = 4f;
     public bool playOnEnter = true, playOnExit = false, playAfterDelay = false;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     public float playDelay = 0.25f;
