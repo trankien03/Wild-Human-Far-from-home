@@ -8,7 +8,7 @@ public class bulletScripts : MonoBehaviour
     public GameObject target;
     public float speed = 2.0f;
     Rigidbody2D rb;
-    public float damage = 10f;
+    public int damage = 10;
     public float timer = 5f;
     public Vector2 Knockback = new Vector2(0, 0);
     private void Awake()

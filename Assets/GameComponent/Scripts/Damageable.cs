@@ -110,7 +110,7 @@ public class Damageable : MonoBehaviour
         //Hit(10, new Vector2(2,1));
 
     }
-    public bool Hit(float damage, Vector2 knockback)
+    public bool Hit(int damage, Vector2 knockback)
     {
         if (IsAlive && !isInvincible) 
         {
@@ -121,6 +121,7 @@ public class Damageable : MonoBehaviour
             LockVelocity = true;
 
             damageableHit?.Invoke(damage, knockback);
+            CharacterEvents.characterDamaged.Invoke(gameObject, damage);
 
             return true;
         }

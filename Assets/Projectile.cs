@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public float damage = 10f;
+    public int damage = 10;
     public Vector2 moveSpeed = new Vector2(3f,0);
     Rigidbody2D rb;
     public float timer = 5f;
