@@ -7,6 +7,7 @@ public class StageProgress : MonoBehaviour
 {
     public static int enemyDeathCount = 0;
     public static int bossDeathCount = 0;
+    public static bool winningCondition = false;
     public int enemyDeafeatingCondition = 20;
     public int bossDeafeatingCondition = 0;
 
@@ -16,6 +17,7 @@ public class StageProgress : MonoBehaviour
     {
         enemyDeathCount = 0;
         bossDeathCount = 0;
+        winningCondition = false;
     }
 
     // Update is called once per frame
@@ -24,10 +26,12 @@ public class StageProgress : MonoBehaviour
         if (bossDeafeatingCondition == 0)
         {
             gameConditionText.text = "Enemies deafeated Count: " + enemyDeathCount + "/" + enemyDeafeatingCondition;
+            if (enemyDeathCount >= enemyDeafeatingCondition) winningCondition = true;
         }
         else
         {
             gameConditionText.text = "Boss deafeated Count: " + bossDeathCount + "/" + bossDeafeatingCondition;
+            if (bossDeathCount >= bossDeafeatingCondition) winningCondition = true;
         }
         
     }
