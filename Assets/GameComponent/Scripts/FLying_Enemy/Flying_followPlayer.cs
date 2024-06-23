@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Flying_followPlayer : MonoBehaviour
@@ -12,6 +13,7 @@ public class Flying_followPlayer : MonoBehaviour
     public GameObject bullet;
     public GameObject bulletParent;
     public float fireRate = 1f;
+    private float timer = 0f;
     private float nextFireTime;
     private Animator animator;
     private Rigidbody2D rb;
@@ -49,6 +51,16 @@ public class Flying_followPlayer : MonoBehaviour
             
         //}
         HasTarget = shootingRange >= distanceFromPlayer;
+        timer += Time.deltaTime;
+        if (timer < fireRate && shootingRange >= distanceFromPlayer)
+        {
+            HasTarget = false;
+        }
+        else if (timer >= fireRate && shootingRange >= distanceFromPlayer)
+        {
+            timer = 0;
+        }
+
         if (rb.position.x - playerPosition.position.x > 0)
         {
             transform.localScale = new Vector3(3, 3, 3);
@@ -59,6 +71,7 @@ public class Flying_followPlayer : MonoBehaviour
             transform.localScale = new Vector3(-3, 3, 3);
         }
 
+        
     }
 
     private void generateBullet()
