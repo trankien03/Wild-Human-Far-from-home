@@ -121,8 +121,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea3abeb7d290cfe458d9f5e9d7cbb804, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
-  moveSpeed: {x: 3, y: 0}
+  damage: 3
+  moveSpeed: {x: 2.5, y: 0}
   timer: 5
   Knockback: {x: 2, y: 0}
 --- !u!50 &1672972995008166661

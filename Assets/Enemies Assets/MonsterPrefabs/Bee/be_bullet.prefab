@@ -127,8 +127,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  speed: 2
-  damage: 10
+  speed: 3
+  damage: 7
   timer: 5
   Knockback: {x: 1, y: 1}
 --- !u!70 &-2157634338708304355

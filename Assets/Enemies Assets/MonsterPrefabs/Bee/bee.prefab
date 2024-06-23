@@ -128,7 +128,7 @@ MonoBehaviour:
   shootingRange: 5.03
   bullet: {fileID: 8915204549554602127, guid: 0c2c0201cebb3b549b62143611672f8b, type: 3}
   bulletParent: {fileID: 8228667617533543684}
-  fireRate: 1
+  fireRate: 2
   _hasTarget: 0
 --- !u!50 &6933462852798055700
 Rigidbody2D:
@@ -210,6 +210,7 @@ MonoBehaviour:
   VelocityLocking:
     m_PersistentCalls:
       m_Calls: []
+  isDead: 0
   _maxHealth: 100
   _health: 100
   _isAlive: 1

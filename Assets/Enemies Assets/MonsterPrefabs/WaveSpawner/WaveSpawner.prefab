@@ -45,15 +45,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
+  - enemyPrefab: {fileID: 2349005945047044072, guid: aaf30366230263148908ec0143637e70, type: 3}
+  - enemyPrefab: {fileID: 2547398057669821651, guid: b62b8f17003fab44b8c7a924f39ac5dc, type: 3}
   - enemyPrefab: {fileID: 3809576012964977959, guid: b263ffe0036cbb443b203b92f13908d9, type: 3}
   - enemyPrefab: {fileID: 7143587129353374078, guid: 585a6862890733d44bded0666227eb83, type: 3}
   currWave: 1
   waveValue: 0
-  enemiesToSpawn:
-  - {fileID: 3809576012964977959, guid: b263ffe0036cbb443b203b92f13908d9, type: 3}
-  numberEnemies: 5
+  enemiesToSpawn: []
+  numberOfWorm: 5
   numberGoblin: 5
+  numberBee: 5
+  numberFly2: 5
   spawnLocation: {fileID: 0}
   waveDuration: 5
   spawnInterval: 10
-  spawnTimer: 5

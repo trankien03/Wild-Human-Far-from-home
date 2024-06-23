@@ -9,8 +9,10 @@ public class waveSpawner : MonoBehaviour
     public int waveValue;
     public List<GameObject> enemiesToSpawn = new List<GameObject>();
 
-    public int numberEnemies = 5;
+    public int numberOfWorm = 5;
     public int numberGoblin = 5;
+    public int numberBee = 5;
+    public int numberFly2 = 5;
 
     public Transform spawnLocation;
     public int waveDuration;
@@ -64,16 +66,55 @@ public class waveSpawner : MonoBehaviour
         List<GameObject> generateEnemies = new List<GameObject>();
         
         //add loai enemy 1, co bao nhieu enemy, tao bay nhieu vong for.
-        for (int i =0; i < numberEnemies; i++)
+        /*for (int i =0; i < numberOfWorm; i++)
         {
             generateEnemies.Add(enemies[0].enemyPrefab);
         }
-        for (int i = 0; i < numberEnemies; i++)
+        for (int i = 0; i < numberGoblin; i++)
         {
             generateEnemies.Add(enemies[1].enemyPrefab);
-        }
-        
+        }*/
 
+        if (numberOfWorm >= numberGoblin)
+        {
+            for (int i = 0; i < numberOfWorm; i++)
+            {
+                generateEnemies.Add(enemies[0].enemyPrefab);
+                if (i + 1 == numberGoblin)
+                    continue;
+                generateEnemies.Add(enemies[1].enemyPrefab);
+            }
+        }else
+        {
+            for (int i = 0; i < numberGoblin; i++)
+            {
+                generateEnemies.Add(enemies[1].enemyPrefab);
+                if (i + 1 == numberOfWorm)
+                    continue;
+                generateEnemies.Add(enemies[0].enemyPrefab);
+            }
+        }
+
+        if (numberBee >= numberFly2)
+        {
+            for (int i = 0; i < numberBee; i++)
+            {
+                generateEnemies.Add(enemies[2].enemyPrefab);
+                if (i + 1 == numberFly2)
+                    continue;
+                generateEnemies.Add(enemies[3].enemyPrefab);
+            }
+        }
+        else
+        {
+            for (int i = 0; i < numberFly2; i++)
+            {
+                generateEnemies.Add(enemies[3].enemyPrefab);
+                if (i + 1 == numberBee)
+                    continue;
+                generateEnemies.Add(enemies[2].enemyPrefab);
+            }
+        }
         enemiesToSpawn.Clear();
         enemiesToSpawn = generateEnemies;
     }

@@ -409,6 +409,7 @@ MonoBehaviour:
   VelocityLocking:
     m_PersistentCalls:
       m_Calls: []
+  isDead: 0
   _maxHealth: 100
   _health: 100
   _isAlive: 1
@@ -427,7 +428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ed60b2441f5cc84884f101c910bf3a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDamage: 20
+  attackDamage: 15
   Knockback: {x: 2, y: 1}
 --- !u!114 &4252199225223201883
 MonoBehaviour:
