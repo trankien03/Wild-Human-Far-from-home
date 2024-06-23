@@ -8,8 +8,9 @@ public class boss : MonoBehaviour
     public Transform player;
     public bool isFlipped = false;
     
-    private Damageable damageable;
 
+    private Damageable damageable;
+    private float bossScale;
     private void Awake()
     {
         damageable = GetComponent<Damageable>();
@@ -19,6 +20,11 @@ public class boss : MonoBehaviour
     {
         if (damageable.Health < damageable.maxHealth / 2)
         {
+            if (transform.localScale.x <= 3.5)
+            {
+                transform.localScale = new Vector3(transform.localScale.x + Time.fixedDeltaTime,
+                    transform.localScale.y + Time.fixedDeltaTime, transform.localScale.z);
+            }
             
         }
     }

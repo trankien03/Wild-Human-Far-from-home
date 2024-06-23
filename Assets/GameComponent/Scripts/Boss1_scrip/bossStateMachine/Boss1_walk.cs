@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class Boss1_walk : StateMachineBehaviour
 {
-    public float speed = 3f;
+    public float speed = 1f;
     Transform player;
-    float attackRange = 3f;
+    public float attackRange = 3f;
+    private Damageable damageable;
+
 
     Rigidbody2D rb;
     boss boss_;
@@ -16,6 +18,8 @@ public class Boss1_walk : StateMachineBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
         rb = animator.GetComponent<Rigidbody2D>();
         boss_ = animator.GetComponent<boss>();
+        damageable = animator.GetComponent<Damageable>();
+        
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -26,6 +30,12 @@ public class Boss1_walk : StateMachineBehaviour
         Vector2 target = new Vector2(player.position.x, rb.position.y);
         Vector2 newPos = Vector2.MoveTowards(rb.position, target, speed * Time.fixedDeltaTime);
         rb.MovePosition(newPos);
+
+        if (damageable.Health < damageable.maxHealth / 2)
+        {
+            speed = 2.5f;
+            attackRange = 5f;
+        }
 
         if (Vector2.Distance(player.position, rb.position) <= attackRange)
         {
