@@ -63,7 +63,7 @@ public class DamageableForPlayer : MonoBehaviour
         }
         set
         {
-            _isAlive = value;
+            _isAlive = value;   
             animator.SetBool(AnimationStrings.isAlive, value);
             Debug.Log("IsAlive set " + value);
 
