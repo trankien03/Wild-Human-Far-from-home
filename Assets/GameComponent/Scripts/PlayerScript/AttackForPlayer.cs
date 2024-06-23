@@ -26,7 +26,12 @@ public class AttackForPlayer : MonoBehaviour
         if (damageable != null) 
         {
             Vector2 delivererdKnockback = transform.parent.rotation.y == 0f ? Knockback : new Vector2(-Knockback.x, Knockback.y);
-            bool gothit = damageable.Hit(attackDamage, delivererdKnockback);    
+            bool gothit = damageable.Hit(attackDamage, delivererdKnockback);
+            if (damageable.Health <= 0 && !damageable.isDead)
+            {
+                StageProgress.enemyDeathCount++;
+                damageable.isDead = true;
+            }
             if (gothit) Debug.Log(collision.name + "hiting" + attackDamage);
         }
     }

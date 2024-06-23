@@ -9,6 +9,7 @@ public class Damageable : MonoBehaviour
 
     public UnityEvent<bool> VelocityLocking;
     Animator animator;
+    public bool isDead = false;
 
     [SerializeField]
     private float _maxHealth = 100.0f;
