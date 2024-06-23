@@ -24,6 +24,11 @@ public class CDTimer : MonoBehaviour
             animator.SetBool(AnimationStrings.isOutOfTime, value);
         }
     }
+
+    public int getTime()
+    {
+        return Mathf.FloorToInt(remainingTime /1);
+    }
     private void Awake()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");

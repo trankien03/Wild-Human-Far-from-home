@@ -42,6 +42,7 @@ public class DamageableForPlayer : MonoBehaviour
         set
         {
             _health = value;
+            StageProgress.gotHit++;
             healthChanged?.Invoke(_health, maxHealth);
             if (_health <= 0 || animator.GetBool(AnimationStrings.isOutOfTime))
             {

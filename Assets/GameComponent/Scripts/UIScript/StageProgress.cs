@@ -7,6 +7,7 @@ public class StageProgress : MonoBehaviour
 {
     public static int enemyDeathCount = 0;
     public static int bossDeathCount = 0;
+    public static int gotHit = 0;
     public static bool winningCondition = false;
     public int enemyDeafeatingCondition = 20;
     public int bossDeafeatingCondition = 0;
@@ -17,7 +18,9 @@ public class StageProgress : MonoBehaviour
     {
         enemyDeathCount = 0;
         bossDeathCount = 0;
+        gotHit = 0;
         winningCondition = false;
+        Time.timeScale = 1.0f;
     }
 
     // Update is called once per frame
