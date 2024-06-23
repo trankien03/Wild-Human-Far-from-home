@@ -88,7 +88,7 @@ public class Damageable : MonoBehaviour
 
 
     private float timeSinceHit;
-    public float invincibilityTime = 0.25f;
+    public float invincibilityTime = 0.1f;
 
 
     private void Awake()

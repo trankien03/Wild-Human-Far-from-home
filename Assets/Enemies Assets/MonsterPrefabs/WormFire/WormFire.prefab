@@ -168,11 +168,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  VelocityLocking:
+    m_PersistentCalls:
+      m_Calls: []
   _maxHealth: 100
   _health: 100
   _isAlive: 1
+  _lockVelocity: 0
   isInvincible: 0
-  invincibilityTime: 0.25
+  invincibilityTime: 0.1
 --- !u!114 &6847121119639821168
 MonoBehaviour:
   m_ObjectHideFlags: 0

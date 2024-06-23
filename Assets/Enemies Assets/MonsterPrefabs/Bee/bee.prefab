@@ -207,11 +207,15 @@ MonoBehaviour:
   damageableHit:
     m_PersistentCalls:
       m_Calls: []
+  VelocityLocking:
+    m_PersistentCalls:
+      m_Calls: []
   _maxHealth: 100
   _health: 100
   _isAlive: 1
+  _lockVelocity: 0
   isInvincible: 0
-  invincibilityTime: 0.25
+  invincibilityTime: 0.1
 --- !u!1 &8228667617533543684
 GameObject:
   m_ObjectHideFlags: 0
