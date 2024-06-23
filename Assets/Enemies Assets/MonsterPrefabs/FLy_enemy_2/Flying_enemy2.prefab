@@ -139,6 +139,7 @@ MonoBehaviour:
   VelocityLocking:
     m_PersistentCalls:
       m_Calls: []
+  isDead: 0
   _maxHealth: 100
   _health: 100
   _isAlive: 1

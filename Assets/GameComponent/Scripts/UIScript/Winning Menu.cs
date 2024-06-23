@@ -46,7 +46,7 @@ public class WinningMenu : MonoBehaviour
         winningMenu.SetActive(true);
 
         float multiply = 1f;
-        if (StageProgress.gotHit >=6) multiply = 0.8f;
+        if (StageProgress.gotHit >=8) multiply = 0.8f;
         if (StageProgress.gotHit <=2) multiply = 1.2f;
 
         int total = Mathf.FloorToInt( (StageProgress.enemyDeathCount*10*multiply + StageProgress.bossDeathCount*10*multiply + timer.getTime()) / 1 );
@@ -57,9 +57,6 @@ public class WinningMenu : MonoBehaviour
         gotHit.text = "Got hit: " + StageProgress.gotHit + " times (x" + multiply + ")";
         timeRemaining.text = "Time Remaining: "+ timer.getTime() + " sec";
         totalPoint.text = "Total Point: " + total;
-
-
-
     }
 
     public void GoToTheMainMenu()
