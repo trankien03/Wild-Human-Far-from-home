@@ -10,11 +10,12 @@ public class waveSpawner : MonoBehaviour
     public List<GameObject> enemiesToSpawn = new List<GameObject>();
 
     public int numberEnemies = 5;
+    public int numberGoblin = 5;
 
     public Transform spawnLocation;
     public int waveDuration;
     private float waveTimer;
-    private float spawnInterval;
+    public float spawnInterval;
     private float spawnTimer;
     // Start is called before the first frame update
     void Start()
@@ -50,7 +51,7 @@ public class waveSpawner : MonoBehaviour
         waveValue = currWave * 10;
         GenerateEnemies();
 
-        spawnInterval = waveDuration / enemiesToSpawn.Count; //give a fixed time between each enemies
+        //spawnInterval = waveDuration / enemiesToSpawn.Count; //give a fixed time between each enemies
         waveTimer = waveDuration; //waveDuration is read Only
     }
 
@@ -71,7 +72,7 @@ public class waveSpawner : MonoBehaviour
         {
             generateEnemies.Add(enemies[1].enemyPrefab);
         }
-
+        
 
         enemiesToSpawn.Clear();
         enemiesToSpawn = generateEnemies;

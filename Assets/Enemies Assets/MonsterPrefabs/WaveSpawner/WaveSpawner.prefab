@@ -49,4 +49,11 @@ MonoBehaviour:
   - enemyPrefab: {fileID: 7143587129353374078, guid: 585a6862890733d44bded0666227eb83, type: 3}
   currWave: 1
   waveValue: 0
-  enemiesToSpawn: []
+  enemiesToSpawn:
+  - {fileID: 3809576012964977959, guid: b263ffe0036cbb443b203b92f13908d9, type: 3}
+  numberEnemies: 5
+  numberGoblin: 5
+  spawnLocation: {fileID: 0}
+  waveDuration: 5
+  spawnInterval: 10
+  spawnTimer: 5
