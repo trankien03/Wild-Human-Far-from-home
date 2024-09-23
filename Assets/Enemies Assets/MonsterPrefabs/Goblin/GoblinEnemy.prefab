@@ -428,7 +428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ed60b2441f5cc84884f101c910bf3a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDamage: 15
+  attackDamage: 8
   Knockback: {x: 2, y: 1}
 --- !u!114 &4252199225223201883
 MonoBehaviour:

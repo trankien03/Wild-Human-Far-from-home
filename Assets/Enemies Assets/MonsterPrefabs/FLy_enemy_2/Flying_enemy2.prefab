@@ -222,10 +222,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 3
   lineOfSize: 11.2
-  shootingRange: 5.69
+  shootingRange: 6
   bullet: {fileID: 8185566448791948383, guid: 0904b63b032fa52479bb4443792a18a1, type: 3}
   bulletParent: {fileID: 3548534430055943189}
-  fireRate: 4
+  fireRate: 6
   _hasTarget: 0
 --- !u!95 &7409873759855370788
 Animator:

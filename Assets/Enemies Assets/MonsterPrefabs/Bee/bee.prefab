@@ -125,7 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 3
   lineOfSize: 12.1
-  shootingRange: 5.42
+  shootingRange: 4.5
   bullet: {fileID: 8915204549554602127, guid: 0c2c0201cebb3b549b62143611672f8b, type: 3}
   bulletParent: {fileID: 8228667617533543684}
   fireRate: 4
