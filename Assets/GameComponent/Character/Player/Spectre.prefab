@@ -608,7 +608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 5
   runSpeed: 10
-  jumpImpluse: 15
+  jumpImpluse: 18
   airWalkSpeed: 8
   _isMoving: 0
   _IsRunning: 0
@@ -755,8 +755,8 @@ MonoBehaviour:
   healthChanged:
     m_PersistentCalls:
       m_Calls: []
-  _maxHealth: 100
-  _health: 100
+  _maxHealth: 200
+  _health: 200
   _isAlive: 1
   isInvincible: 0
   invincibilityTime: 0.25
@@ -856,7 +856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88b07183237ffa849a5c309a4921febd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDamage: 10
+  attackDamage: 200
   Knockback: {x: 1, y: 1}
 --- !u!1 &7522628803654180036
 GameObject:

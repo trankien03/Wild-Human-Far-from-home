@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 7441251994002249699}
   m_Layer: 8
   m_Name: Boss01
-  m_TagString: Untagged
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -305,9 +305,9 @@ MonoBehaviour:
   VelocityLocking:
     m_PersistentCalls:
       m_Calls: []
-  isDead: 0
-  _maxHealth: 100
-  _health: 100
+  isDead: 1
+  _maxHealth: 400
+  _health: 400
   _isAlive: 1
   _lockVelocity: 0
   isInvincible: 0
