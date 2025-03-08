@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GameComponent/Scenes/Map 3 - Cruel King Chamber.unity
     guid: fb95dadbdf698c64098393012f2e371d
+  - enabled: 1
+    path: Assets/GameComponent/Scenes/Map 1 - Heroes Field (Inquisitor).unity
+    guid: 9b5a0a7101b59914c8d2f4b166cf9bca
+  - enabled: 1
+    path: Assets/GameComponent/Scenes/Map 2 - Oak Wood (Inquisitor).unity
+    guid: f67b091436a5fa44d8021a9c5ee84bad
+  - enabled: 1
+    path: Assets/GameComponent/Scenes/Map 3 - Cruel King Chamber (Inquisitor).unity
+    guid: 0c6c5336d61648b4cac95b7df4bf5f53
   m_configObjects: {}

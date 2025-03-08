@@ -8,7 +8,7 @@ public class LosingMenu : MonoBehaviour
     public GameObject losingMenu;
     Animator animator;
     private float delayCounting = 0f;
-    public float delayTime = 1f;
+    public float delayTime = 2f;
     void Awake()
     {
         losingMenu.SetActive(false);
